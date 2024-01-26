@@ -90,7 +90,7 @@ pipeline {
 	}
 	post {
 		always {
-			slackSend channel: #'crm', 
+			slackSend channel: '#crm', 
 			color: COLOR_MAP[currentBuild.currentResult],
 			message: "*${currentBuild.currentResult}:* Job ${env.JOB_NAME} build ${env.BUILD_NUMBER} \n"
 
