@@ -26,7 +26,7 @@ pipeline {
 				git branch: 'docker', url: 'https://github.com/hkhcoder/vprofile-project.git'
 			}
 		}
-		stage('Unit Test') {
+		stage('Test') {
 			steps {
 				sh 'mvn test'
 			}
